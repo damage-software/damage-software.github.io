@@ -175,13 +175,25 @@ header .logo h3 {
   justify-content: center;
 }
 
-.wrapper iframe {
+/* 
+IFRAME SIZE
+          width="515"
+          height="289"
+*/
+
+.wrapper .container iframe {
   border: 10px solid #698972;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  aspect-ratio: 16/9;
+  width: 96%;
+  margin: 0 auto;
+  display: block;
 }
 
 .container {
-  max-width: 1024px;
+  width: 100%;
+  margin: 0 20px 0 20px;
+  max-width: 600px;
 }
 
 .container p {
@@ -238,4 +250,15 @@ header .logo h3 {
   left: 0px;
   margin-right: 10px;
   margin-left: 5px;
+}
+
+.container .note {
+  cursor: help;
+  display: block;
+  margin: 30px auto;
+  font-size: 10pt;
+  max-width: 500px;
+  text-align: center;
+  opacity: 0.8;
+  color: #ff9e58;
 }

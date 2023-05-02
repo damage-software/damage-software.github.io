@@ -12,6 +12,12 @@
     />
     <link rel="stylesheet" href="main.css" />
     <title>Ancient Warriors - Online turn-based strategy game</title>
+    <script>
+      function resizeIframe(obj) {
+        obj.style.height =
+          obj.contentWindow.document.documentElement.scrollHeight + "px";
+      }
+    </script>
   </head>
   <body>
     <header>
@@ -24,8 +30,6 @@
     <div class="wrapper">
       <div class="container">
         <iframe
-          width="515"
-          height="289"
           src="https://www.youtube.com/embed/avoU6BMaIUc"
           title="YouTube video player"
           frameborder="0"
@@ -48,10 +52,24 @@
           LAUNCHER
         </a>
 
-        <p style="margin-top: 80px">
-          Any feedback is appreciated @
+        <span
+          class="note"
+          title="You will probably see `Unknown Publisher` warning when you try
+to install the game launcher. This is due to the fact that the app is
+not code signed yet. Code signing is a process that require purchase
+of certificate. Since the game is in alpha state, I've decided to
+postpone this purchase for later state."
+          >[ Note: Unknown publisher warning ]</span
+        >
+
+        <p style="margin-top: 20px">
+          Any feedback is appreciated @ <br />
           <a target="_blank" href="https://www.facebook.com/nzhul"
             >facebook.com/nzhul</a
+          >
+          |
+          <a target="_blank" href="https://www.youtube.com/damage-software"
+            >youtube.com/damage-software</a
           >
         </p>
       </div>
