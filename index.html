@@ -12,12 +12,6 @@
     />
     <link rel="stylesheet" href="main.css" />
     <title>Ancient Warriors - Online turn-based strategy game</title>
-    <script>
-      function resizeIframe(obj) {
-        obj.style.height =
-          obj.contentWindow.document.documentElement.scrollHeight + "px";
-      }
-    </script>
   </head>
   <body>
     <header>
@@ -45,14 +39,13 @@
           connection.
         </p>
 
-        <a
-          class="downloadBtn"
-          href="https://github.com/nzhul/tic-tac-toe-online/releases/download/v15/build-StandaloneWindows64-v15.zip"
-          download="Ancient Warriors Launcher Setup 1.0.13"
-        >
+        <a class="downloadBtn" href="#" download="FileNotFound">
           <img src="download-icon.svg" />
           LAUNCHER
         </a>
+        <span class="version">[ v. 0.0.0 ]</span>
+
+        <a class="loading">LOADING URL</a>
 
         <span
           class="note"
@@ -76,5 +69,6 @@ postpone this purchase for later state."
         </p>
       </div>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>

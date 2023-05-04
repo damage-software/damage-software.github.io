@@ -216,7 +216,7 @@ IFRAME SIZE
 .container .downloadBtn {
   width: 254px;
   height: 60px;
-  display: block;
+  display: none;
   margin: 0 auto;
   line-height: 50px;
   background-color: #49b76b;
@@ -261,4 +261,32 @@ IFRAME SIZE
   text-align: center;
   opacity: 0.8;
   color: #ff9e58;
+}
+
+.container .loading {
+  width: 254px;
+  height: 60px;
+  display: block;
+  margin: 0 auto;
+  line-height: 50px;
+  background-color: #717681;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease-out;
+  font-size: 18pt;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  padding-top: 10px;
+  text-decoration: none;
+}
+
+.container .version {
+  display: block;
+  margin: 10px auto;
+  font-size: 10pt;
+  text-align: center;
+  opacity: 0.8;
 }
